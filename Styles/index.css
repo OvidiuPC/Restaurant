@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Home layout */
+.home-container{
+    margin-top: 12vh;
+    width: 100%;
+    height: auto;
+   
+}
+.background-restaurant{
+    width: 100%;
+    height: 88vh;
+    background-image: url(/image/restaurant-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    word-wrap: break-word;
+}
+#restaurant-name{
+    color: white;
+    font-family: 'Bonheur Royale', cursive;
+    font-size: 8em;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    padding-top: 135px;
+}
+#restaurant-description{
+    color: white;
+    font-size: 1.5em;
+   padding:0 30%;
+}
+/* Food Home */
+.food-home{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.home-card{
+    width: 20%;
+    height: 70%;
+    
+}
+.first-home-card{
+    background-image: url(/image/pasta-italian.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    background-position-y: 10%;
+  
+}
+.second-home-card{
+  background-image: url(/image/lasagnia.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    background-position-y: 10%;
+}
+.third-home-card{
+    background-image: url(/image/pizza-istock.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    background-position-y: 10%;
+}
+/*-------Media------ */
+
+@media(min-width:280px) and (max-width:768px){
+    .home-container{
+        margin-top: 9.5vh;
+    }
+    .background-restaurant{
+        height: 90.5vh;
+    }
+    #restaurant-name{
+        font-size: 3em;
+    }
+    #restaurant-description{
+        padding: 0 10%;
+        font-size: 1em;
+    }
+    /* Food home */
+    .food-home{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .first-home-card,.second-home-card,.third-home-card{
+        background-position-y: 30%;
+    }
+}
