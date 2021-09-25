@@ -43,35 +43,35 @@
     justify-content: space-evenly;
     align-items: center;
 }
-.home-card{
-    width: 20%;
+.food-card{
+    width: 25%;
     height: 70%;
-    
 }
-.first-home-card{
-    background-image: url(/image/pasta-italian.jpg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment:inherit;
-    background-position-y: 10%;
-  
+.info{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    position: relative;
 }
-.second-home-card{
-  background-image: url(/image/lasagnia.jpeg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment:inherit;
-    background-position-y: 10%;
+.promotion{
+    font-size: xx-large;
+    color: white;
+    font-weight: 900;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: red;
+    border-radius: 5px;
 }
-.third-home-card{
-    background-image: url(/image/pizza-istock.jpg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment:inherit;
-    background-position-y: 10%;
+.product{
+    width: 100%;
+    height: 70%;
+}
+.product img{
+    width: 100%;
+    height: 100%;
 }
 /*-------Media------ */
 
@@ -98,7 +98,22 @@
     justify-content: space-between;
     align-items: center;
     }
-    .first-home-card,.second-home-card,.third-home-card{
-        background-position-y: 30%;
+    .food-home h2{
+        font-size: small;
     }
+    .food-card{
+    width: 50%;
+}
+   .promotion{
+    font-size: small;
+    color: white;
+    font-weight: 900;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: red;
+    border-radius: 5px;
+}
 }
