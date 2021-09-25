@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu-container{
+    position: relative;
+     margin-top: 12vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height:auto;
+}
+.menu-content{
+    width:85%;
+    height: 88vh;
+    overflow-y: scroll;
+    position:absolute;
+    left: 15%;
+    background-color: rgb(0, 47, 255);
+}
+.menu-content::-webkit-scrollbar{
+    display: none;
+}
+.sidebar-menu{
+    width: 15%;
+    height: 88vh;
+    position: fixed;
+    background-color: red;
+     display: flex;
+     flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+.menu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px 0;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5f329f79c232cb4ecb69ba9a/1612605383541-G2OT0FY137CE16N36OO0/food+background+for+restaurant+menu-10.jpg);
+}
+.menu-img{
+    width: 90%;
+    height: 15%;
+    cursor: pointer;
+    
+   
+}
+.menu-img:hover{
+    transform: scale(0.9);
+}
+.arrow-left{
+    display: none;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 5%;
+    background-color: rgb(197, 194, 194);
+}
+.arrow-right{
+    display: none;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 5%;
+    background-color: rgb(197, 194, 194);
+}
+.arrow-right i, .arrow-left i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* Media */
+
+@media(min-width:280px) and (max-width:768px){
+    .menu-container{
+        margin-top: 9vh;
+        flex-direction: row;
+       
+    }
+    .sidebar-menu{
+        width: 100%;
+        height: 15vh;
+        flex-direction: row;
+    }
+    .arrow-left, .arrow-right{
+        display: block;
+    }
+    .menu-img{
+        margin-left: 10px;
+        width: 100px;
+        height: 90%;
+    }
+    .menu{
+        overflow-y:scroll;
+        flex-direction: row;
+        justify-content: flex-start;
+        position: absolute;
+        left: 5%;
+        width: 90%;
+        padding: 0 20px;
+        background-image: url(https://media.gettyimages.com/photos/vintage-restaurant-menu-on-a-rustic-wood-background-picture-id525396130?s=612x612);
+        background-size: cover;
+
+    }
+    .menu-content{
+        left: 0;
+        width: 100%;
+        height: 75.5vh;
+        margin-top: 15.5vh;
+    }
+}
