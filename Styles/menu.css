@@ -106,13 +106,20 @@
 .product-info{
     width: 60%;
     height: 100%;
+    overflow:hidden;
+   display: inline-block;
+  
 }.product-title{
     height: 20%;
 }
 .product-ingredient{
     height:40% ;
-    font-size: 1.1em;
+    font-size: 1.1em; 
+    overflow-wrap: break-word;
+    text-transform: capitalize;
 }
+
+
 .product-weight{
     height: 20%;
     font-size: 1.3em;
@@ -129,7 +136,7 @@
     color: dimgray;
     font-size: medium;
 }
-.product-title, .product-ingredient, .product-weight,
+.product-title, .product-weight,
 .product-price{
     width: 100%;
     display: flex;
@@ -137,6 +144,7 @@
     align-items: center;
     
 }
+
 /* Media */
 
 @media(min-width:280px) and (max-width:768px){
@@ -182,7 +190,7 @@
     /* Card product */  
     .product-card{
     width: 30%;
-    height: 20vh;
+    height: 15vh;
     display: flex;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     overflow: hidden;
@@ -213,7 +221,11 @@
 }
 .product-ingredient{
     height:40% ;
+    width: 100%;
+    overflow-x: hidden;
     font-size:0.5em;
+    word-wrap: break-word;
+
 }
 .product-weight{
     height: 20%;
@@ -222,13 +234,9 @@
 }
 .product-price{
    height: 20%;
-   font-size: 1em;  
+   font-size: 0.7em;  
 }
 .current-price{
     color: red;
-}
-.old-price{
-    color: dimgray;
-    font-size: medium;
 }
 }

@@ -190,7 +190,7 @@ const menuProduct = [
 
 const menuContent = document.querySelector(".menu-content");
 const menuBtns = document.querySelectorAll('.filter-btn');
-
+const greeting = document.querySelector('.greeting')
 
 //loaded items on html
 window.addEventListener("DOMContentLoaded", function () {
@@ -206,7 +206,7 @@ menuBtns.forEach(function(btn){
         return menuItem
       }
     });
-    if(category ===''){
+    if(category ==='pizza'){
       displayMenu(menuProduct)
     }else{
       displayMenu(menuCategory)
@@ -227,7 +227,7 @@ let showMenu = menuItem.map(function (product) {
         <p class="product-weight">${product.weight}</p>
         <p class="product-price">
         <span class="current-price">${product.currentPrice}</span>
-         <del><span class="old-price">${product.oldPrice}</span></del>$</p>
+        <span>$</span>
       </div>
        
     </div>`;
