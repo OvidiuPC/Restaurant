@@ -24,3 +24,18 @@ function navSlide() {
 }
 
 navSlide();
+
+// End navigation efect
+const navigation = document.querySelector('.header');
+const functionalInfo = document.querySelector(".functional-info");
+window.addEventListener('scroll',function(){
+  console.log(Math.floor(this.scrollY))
+  if(scrollY >= 40){
+   navigation.style.backgroundColor = "rgb(255, 255, 255)";
+   functionalInfo.style.backgroundColor = "rgb(255, 255, 255)";
+  }else{
+    navigation.style.backgroundColor = "rgba(255, 255, 255, 0.6)";
+   functionalInfo.style.backgroundColor = "rgba(255, 255, 255, 0.6)";
+
+  }
+})
