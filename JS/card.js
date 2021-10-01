@@ -206,7 +206,7 @@ menuBtns.forEach(function(btn){
         return menuItem
       }
     });
-    if(category ==='pizza'){
+    if(category ===' '){
       displayMenu(menuProduct)
     }else{
       displayMenu(menuCategory)
