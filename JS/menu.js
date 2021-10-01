@@ -1,13 +1,12 @@
-const menu = document.querySelector(".menu");
-const sidebar = document.querySelector(".sidebar-menu")
-const scollLeft = document.querySelector(".arrow-left");
-const menuImage = document.querySelectorAll(".menu-img");
 
-
-scollLeft.addEventListener("click", function(){
-  menuImage.forEach(function(item){
-      item.scrollIntoView()
-  })
+const left = document.querySelector(".arrow-left");
+const right = document.querySelector(".arrow-right")
+const sidebar = document.querySelector(".sidebar-menu");
+//set event for btns
+left.addEventListener("click", function () {
+  sidebar.scrollLeft += 100;
+});
+right.addEventListener("click",function(){
+  sidebar.scrollLeft -= 100;
 })
-
 
