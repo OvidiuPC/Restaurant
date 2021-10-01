@@ -115,7 +115,7 @@ p:nth-child(2){
 }
 textarea{
     border: 1px solid black;
-    font-size: 2em;
+    font-size: 1em;
 }
 /* Media */
 @media(min-width:280px) and (max-width:768px){
